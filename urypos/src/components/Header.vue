@@ -16,7 +16,7 @@
             "
           >
             <a href="/urypos/Table" class="flex-shrink-0">
-              <img :src="imagePath" alt="URY POS logo" class="w-32 lg:w-44" />
+              <img :src="imagePath" alt="BA-POS logo" class="w-32 lg:w-44" />
             </a>
           </template>
           <template v-else>
@@ -56,6 +56,7 @@
           <div
             v-show="this.auth.activeDropdown"
             class="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+            style="z-index: 50;"
           >
             <div class="py-1">
               <a
@@ -101,7 +102,7 @@
 import { useAuthStore } from "@/stores/Auth.js";
 import { posOpening } from "@/stores/posOpening.js";
 import { posClosing } from "@/stores/posClosing.js";
-import uriPosImage from "@/assets/logos/URY_POS.jpg";
+import uriPosImage from "@/assets/logos/BA_POS.jpg";
 import { tabFunctions } from "@/stores/bottomTabs.js";
 import { useTableStore } from "@/stores/Table.js";
 
@@ -113,7 +114,6 @@ export default {
     const posClose = posClosing();
     const tabClick = tabFunctions();
     const table = useTableStore();
-
     return { auth, posOpen, posClose, tabClick, table };
   },
   data() {

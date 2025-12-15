@@ -27,9 +27,9 @@ URY is an open source ERP designed to simplify and streamline restaurant operati
 
 Given below is the list of features of URY app. 
 
-### URY POS
+### BA-POS
 
-**URY POS** is a light weight and easy to use web-based application designed for streamlined order management. It serves as an efficient tool for both cashiers and captains, facilitating order processing at the cash counter and tables.It supports various order types, including dine-in, delivery, takeout and Aggregator. URY POS is compatibile with a wide range of devices, including desktops, tablets, and smartphones. 
+**BA-POS** is a light weight and easy to use web-based application designed for streamlined order management. It serves as an efficient tool for both cashiers and captains, facilitating order processing at the cash counter and tables.It supports various order types, including dine-in, delivery, takeout and Aggregator. BA-POS is compatibile with a wide range of devices, including desktops, tablets, and smartphones. 
 
 :information_source: **Note:**  
 > To access the previous version of the separate URY POS app, [click here](https://github.com/ury-erp/pos).  

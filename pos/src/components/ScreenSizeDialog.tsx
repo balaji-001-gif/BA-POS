@@ -19,12 +19,12 @@ const ScreenSizeDialog = () => {
               <Smartphone className="h-4 w-4 text-red-500 absolute -top-1 -right-1" />
             </div>
           </div>
-          
+
           {/* Title */}
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Desktop Only
           </h2>
-          
+
           {/* Message */}
           <div className="text-gray-600 mb-8 space-y-3">
             <p className="text-lg">
@@ -34,7 +34,7 @@ const ScreenSizeDialog = () => {
               Mobile support will be available in a future update. Please use a device with a screen width of 1024px or larger.
             </p>
           </div>
-          
+
           {/* Current Screen Info */}
           <div className="bg-gray-50 rounded-lg p-4 mb-6">
             <p className="text-sm text-gray-600">
@@ -44,11 +44,11 @@ const ScreenSizeDialog = () => {
               Required: <span className="font-semibold text-gray-800">1024px or larger</span>
             </p>
           </div>
-          
+
           {/* Alternative Option */}
           <div className="bg-blue-50 rounded-lg p-4 mb-6">
             <p className="text-sm text-blue-800 mb-3">
-              You can use URY POS Version 1 for mobile devices.
+              You can use BA-POS Version 1 for mobile devices.
             </p>
             <Button
               onClick={handleSwitchToVersion1}

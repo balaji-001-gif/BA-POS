@@ -222,6 +222,12 @@ def sync_order(
     else:
         price_list = invoice.selling_price_list
 
+    # Force update tax template to ensure it picks up the correct one
+    if invoice.restaurant:
+        if (order_type == "Aggregators" and frappe.db.get_value("Branch", invoice.branch, "custom_no_taxes") == 0) or order_type != "Aggregators":
+             invoice.taxes_and_charges = frappe.db.get_value("URY Restaurant", invoice.restaurant, "default_tax_template")
+
+
     # dummy payment
     if invoice.invoice_created == 0:
         invoice.append(
